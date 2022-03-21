@@ -1,0 +1,68 @@
+package com.company.model;
+
+import com.company.enamEx.Gender;
+
+import java.util.Set;
+
+/**
+ * * 3) model пакеттин ичине User деген класс тузунуз, свойствалары - id, name, age, Gender,
+ * Genderди enum кылып башка пакетке тузуп койсонуз болот. id бул жон эле userдин уникалдуу свойствасы болот.
+ */
+public class User {
+    private int id;
+    private String name;
+    private int age;
+    private Gender gender;
+
+    public User() {
+    }
+
+    public User(int id, String name, int age, Gender gender) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
+}
